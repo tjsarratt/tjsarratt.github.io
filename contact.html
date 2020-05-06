@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+  <h1>
+    <div id="link_bar">
+      <a href="index.html">
+      INF250 News </a>
+    </div>
+    </h1>
+           
+          <nav>
+            <a href="news.html">News</a> |
+            <a href="sports.html">Sports</a> |
+            <a href="weather.html">Weather</a> |
+            <a href="contact.html">Contact Us</a>
+          </nav>
+        
+          <h2>Contact Us</h2>
+
+
+          <form action= "https://rest-api-ex.herokuapp.com/all" method="POST">
+
+          <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+          <label for="email">E-mail:</label>
+          <input type="text" id="email" name="email" required><br>
+
+          <label for="message">Message:</label>
+        <input type="textarea" id="message" name="message" required><br>
+
+        <input id="Enter" type="submit" value="Submit">
+  <input id="Redo" type="reset">
+      
+      
+      </form>
+
+        <p class="footer">Taylor J. Sarratt &copy; 2020</p>
+</body>
+</html>
